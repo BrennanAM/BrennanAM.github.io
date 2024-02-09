@@ -1,14 +1,15 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    
-    <html language="en">
-    
+
     <title>Error-Filled Page</title>
-    
+
+</head>
+
 <body>
-    <h1>Welcome to My Error-Filled Page
+    <h1>Welcome to My Error-Filled Page</h1>
     
-    This is a paragraph with mismatched tags and missing closing tags.</p>
+    <p>This is a paragraph with mismatched tags and missing closing tags.</p>
     
     <ol>
         <li>Item 1</li>
@@ -21,13 +22,13 @@
         <li>Item 8</li>
         <li>Item 9</li>
         <li>Item 10</li>
-    </ul>
+    </ol>
 
-    <p>This is another paragraph without proper indentation.
+    <p>This is another paragraph without proper indentation.</p>
     
-    <img src="image.jpg">
+    <img src="image.jpg" alt="img">
 
-    <a href="https://www.example.com" target="_blank">Click me!</img>
+    <a href="https://www.example.com" target="_blank">Click me!</a>
 
     <table>
         <tr>
@@ -42,24 +43,48 @@
             <td>Jane</td>
             <td>30</td>
         </tr>
-    
-    <img source="error.jpeg" alt="Error Image">
+    </table>
+  
+    <img src="error.jpeg" alt="Error Image">
 
-    <center>This is centered text.</center>
+    <p style="text-align: center;">This is centered text.</p>
 
-    <p bgcolor="lightgray">Text</p>
+    <p style="background-color:lightgray;">Text</p>
 
     <input type="button" value="Click me">
 
-    <!-- This is an unclosed comment
+    <!-- This is an unclosed comment !-->
 
-    <a href="#">Link without closing tag
+    <a href="#">Link without closing tag</a>
 
-    <p><em>Underlined text</p></em>
+    <p><u>Underlined text</u></p>
 
     <dl>
-        <li>Descriptive Item Title</li>
-        <li>Descriptive Item Text</li>
+        <dt>Descriptive Item Title</dt>
+        <dd>Descriptive Item Text</dd>
     </dl>
+    <ol>
+        <li>Doctype is missing, added doctype.</li>
+        <li>HTML was opened twice; fixed by removing the duplicate opening.</li>
+        <li>Language tag needs to be lang.</li>
+        <li>Head is not closed.</li>
+        <li>H1 is not closed.</li>
+        <li>Paragraph is not closed.</li>
+        <li>List opened with ol but closed with ul; should close with ol.</li>
+        <li>Another paragraph is also not closed.</li>
+        <li>Add alt attribute to img tag.</li>
+        <li>Correct closing tag for anchor element to /a.</li>
+        <li>Did not close td in table.</li>
+        <li>Close the table /table.</li>
+        <li>Replace source with src in the img tag.</li>
+        <li>Replace center with CSS styling.</li>
+        <li>Use CSS styling for background color.</li>
+        <li>Close comment.</li>
+        <li>Add closing /a tag for the "link with closing tag".</li>
+        <li>Properly nest em and p tag.</li>
+        <li>u is used for underline not em</li>
+        <li>Li should be dt. 2nd li should be dd.</li>
+    </ol>
 </body>
 </html>
+
