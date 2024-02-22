@@ -1,0 +1,33 @@
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    font-family:'Segoe UI', sans-serif;
+    color: ghostwhite;
+    background-color: ghostwhite;
+    background-image: url(Tiger_Woods_drives_by_Allison.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .overlay2 {
+    position: absolute;
+    bottom: 10px; 
+    left: 10px; 
+    background: rgba(0, 123, 255, 0.1);
+    color: white; 
+    padding: 10px; 
+    border-radius: 5px; 
+    font-family: 'Arial', sans-serif; 
+}
+  .overlay p{
+    color: white;
+    position: static;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    font-size: 20px;
+  }
