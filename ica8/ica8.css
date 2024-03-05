@@ -1,0 +1,70 @@
+body{
+    background-color: khaki;
+}
+#box1{
+    width: 25vw;
+    height: 20vh;
+    background-color: indianred;
+}
+
+#box1:hover{
+    background-color: purple;
+    transition: width 2s, height 2s, rotate 2s ;
+    rotate: 360deg;
+}
+
+
+#box2{
+    width: 25vw;
+    height:20vh;
+    position: relative;
+    background-color: orangered;
+    animation-name: box2move;
+    animation-duration: 6s;
+    animation-iteration-count:infinite; 
+
+}
+
+#newbox {
+    border: 1px solid;
+    width: 150px;
+    height: 150px;
+    background-color: purple;
+    transition: width 2s, height 2s, backround-color 2s, rotate 2s;
+}
+
+#newbox:hover{
+    background-color: #ffcccc;
+    width:  250px;
+    height: 250px;
+    rotate: 180deg;
+
+}
+
+@keyframes box2move{
+    from{
+        margin: 0;
+    }
+
+    25%{
+        margin-left: 75%;
+        margin-top: 0%;
+    }
+
+
+    50%{
+        margin-left: 75%;
+        margin-top: 50%;
+    }
+
+    75%{
+        margin-left: 0;
+        margin-top: 50%;
+    }
+    
+
+    to{
+        margin: 0;
+    }
+
+}
