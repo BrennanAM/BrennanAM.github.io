@@ -10,14 +10,13 @@ body {
     color: #333;
     line-height: 1.6;
     background-color: #f4f4f4;
-    padding-bottom: 2rem;
 }
 
 header, footer {
     text-align: center;
     padding: 2rem;
     background: #025157;
-    color: #fff;
+    color: #1b1919;
 }
 
 header {
