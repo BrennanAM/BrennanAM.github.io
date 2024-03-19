@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hello World</p>
+    <button type="button"> Dont press me! </button>
+    <script>
+        const button = document.querySelector("button");
+        button.addEventListener('click', runFunction);
+
+        function runFunction() {
+            const text = prompt("Please enter some text");
+            button.textContent = `Change Text: ${text}`;
+        }
+
+    </script>
+    <button type="button" id="button1"> Click to make the button red!</button>
+    <script>
+        const button1 = document.querySelector("#button1");
+    
+        button1.addEventListener('click', showAlert);
+        function showAlert() {
+            window.alert('You clicked the button'); 
+            button1.style.backgroundColor = 'red';
+        }
+    </script>
+</body>
+</html>
