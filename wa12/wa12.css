@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+header {
+  font-weight: 500;
+  text-align: center;
+  padding: 2rem;
+  background: #027368;
+  color: #1b1919;
+  margin-bottom: 2rem;
+}
+
+.app {
+  background: #fff;
+  margin: 20px auto;
+  padding: 2rem;
+  border-left: 5px solid #ff6f61;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  max-width: 600px; /* Adjust based on your preference */
+}
+
+.quote-text, .author-text {
+  color: #025157;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.author-text {
+  margin-top: 1rem;
+  color: #ff6f61;
+  font-size: 1rem;
+}
+
+.controls {
+  margin-top: 2rem;
+  text-align: center; /* Centering the buttons */
+}
+
+.button {
+  display: inline-block; /* Make buttons align side by side */
+  background: #ff6f61;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 10px; /* Spacing between buttons */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: #025157;
+}
+
+#loading {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .app {
+      padding: 3rem;
+  }
+
+  .quote-text, .author-text {
+      font-size: 1.4rem;
+  }
+}
+
+footer {
+  font-size: 0.9rem;
+  background: #025157;
+  color: #fff;
+  text-align: center;
+  margin-top: 2rem; /* Added margin-top for spacing */
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}

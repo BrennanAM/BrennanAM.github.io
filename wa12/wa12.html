@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wa12.css"> <!-- Make sure to adjust the CSS path if needed -->
+    <title>Quote Machine</title>
+</head>
+<body>
+    <div class="app">
+        <header>Random Inspirational Quotes</header>
+        <div id="loading" style="display: none;">Loading...</div> <!-- Loading Indicator -->
+        <section class="quotes">
+            <div class="quote-text" id="js-quote-text"></div>
+            <div class="author-text" id="js-author-text"></div> <!-- Display author -->
+        </section>
+        <section class="controls">
+            <button type="button" id="js-new-quote" class="new-quote button">
+                Generate a new quote
+            </button>
+            <a href="#" target="_blank" id="js-tweet" class="twitter button">
+                Tweet this quote
+            </a> <!-- Updated to be a link for dynamic href update -->
+        </section>
+    </div>
+    <script src="wa12.js"></script> <!-- Make sure to adjust the JS path if needed -->
+
+    
+<footer>
+  <p>
+    Some things that I changed here are first I chnaged the api to an inspirational quote api from type fit API. I also changed the css styling to match my styling from the css midterm. Lastly I added a tweet button where it takes the user to twitter homepage where they can tweet the quote.
+  </p>
+</footer>
+    
+</body>
+
+</html>
