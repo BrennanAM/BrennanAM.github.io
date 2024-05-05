@@ -8,15 +8,15 @@ const currentVolumeDisplay = document.getElementById("current-volume");
 
 let currentVolume = 0;
 let lives = 3;
-let lastValue = 0; // Store the last spun value
+let lastValue = 0; 
 
-// Updating the displayed volume and lives
+
 function updateDisplay() {
   livesDisplay.textContent = `Lives: ${lives}`;
   currentVolumeDisplay.textContent = `Current Volume: ${currentVolume}`;
 }
 
-updateDisplay(); // Initial update of the display
+updateDisplay(); 
 
 const rotationValues = Array.from({ length: 100 }, (_, index) => ({
   minDegree: index * 3.6,
@@ -66,24 +66,24 @@ const valueGenerator = (angleValue) => {
     normalizedAngle >= segment.minDegree && normalizedAngle < segment.maxDegree
   );
   if (selectedSegment) {
-    lastValue = selectedSegment.value; // Store the last value
+    lastValue = selectedSegment.value; 
     finalValue.innerHTML = `<p>Your Volume option to add or subtract from total is: ${lastValue}</p>`;
-    document.getElementById("user-options").style.display = 'block'; // Show options to add or subtract
-    spinBtn.disabled = true; // Disable the spin button to force a decision
+    document.getElementById("user-options").style.display = 'block'; 
+    spinBtn.disabled = true; 
   } else {
     finalValue.innerHTML = `<p>Get PWND spin again</p>`;
   }
   spinBtn.disabled = false;
 };
 
-// Handle adding or subtracting volume
+
 function handleVolumeChange(changeType) {
   if (lives > 0) {
     currentVolume += changeType === 'add' ? lastValue : -lastValue;
     lives--;
     updateDisplay();
     document.getElementById("user-options").style.display = 'none';
-    spinBtn.disabled = false; // Re-enable the spin button after a choice is made
+    spinBtn.disabled = false;
     checkGameEnd();
   }
 }
@@ -91,7 +91,7 @@ function handleVolumeChange(changeType) {
 addBtn.addEventListener("click", () => handleVolumeChange('add'));
 subtractBtn.addEventListener("click", () => handleVolumeChange('subtract'));
 
-// Check if the game should end
+
 function checkGameEnd() {
   if (lives <= 0) {
     spinBtn.disabled = true;
@@ -101,18 +101,18 @@ function checkGameEnd() {
 
 let count = 0;
 let resultValue = 101;
-let isMusicPlayed = false;  // To ensure music plays only once if needed, remove if continuous play is desired each spin
+let isMusicPlayed = false;  
 
 spinBtn.addEventListener("click", () => {
   if (lives > 0) {
     spinBtn.disabled = true;
     finalValue.innerHTML = `<p>Good Luck!</p>`;
     
-    // Play background music when the spin button is clicked
+ 
     if (!isMusicPlayed) {
       const backgroundMusic = document.getElementById('background-music');
       backgroundMusic.play().catch(error => console.error('Failed to play:', error));
-      isMusicPlayed = true;  // Update to true to prevent replaying on subsequent spins, remove if replay desired
+      isMusicPlayed = true; 
     }
 
     let randomDegree = Math.floor(Math.random() * 360);

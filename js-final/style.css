@@ -34,7 +34,7 @@ body {
 
 #wheel {
   width: inherit;
-  max-height: inherit;  /* Adjust based on your needs */
+  max-height: inherit;  
 }
 
 #spin-btn {
@@ -83,7 +83,7 @@ body {
 #user-options {
   position: absolute;
   left: 2em;
-  top: 60%;  /* Adjust this value based on the final layout */
+  top: 60%;  
   display: flex;
   gap: 10px;
 }
