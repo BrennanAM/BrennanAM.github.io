@@ -4,69 +4,114 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 body {
   height: 100vh;
   background: linear-gradient(135deg, #c3a3f1, #a20606);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .wrapper {
-  width: 90%;
+  width: 100%;
   max-width: 34.37em;
   max-height: 90vh;
   background-color: #ffffff;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
   padding: 3em;
   border-radius: 1em;
   box-shadow: 0 4em 5em rgba(27, 8, 53, 0.2);
-}
-.container {
   position: relative;
+}
+
+.container {
   width: 100%;
-  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 #wheel {
-  max-height: inherit;
   width: inherit;
-  top: 0;
-  padding: 0;
+  max-height: inherit;  /* Adjust based on your needs */
 }
-@keyframes rotate {
-  100% {
-    transform: rotate(360deg);
-  }
-}
+
 #spin-btn {
   position: absolute;
-  transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  height: 26%;
-  width: 26%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+  height: 20%;
   border-radius: 50%;
   cursor: pointer;
-  border: 0;
+  border: none;
   background: radial-gradient(#fdcf3b 50%, #d88a40 85%);
   color: #c66e16;
   text-transform: uppercase;
-  font-size: 1.8em;
+  font-size: 1.2em;
   letter-spacing: 0.1em;
   font-weight: 600;
+  padding: 10px 0;
 }
-img {
+
+#info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   position: absolute;
-  width: 4em;
-  top: 45%;
-  right: -8%;
+  top: 85%;
 }
-#final-value {
-  font-size: 1.5em;
-  text-align: center;
-  margin-top: 1.5em;
+
+#lives {
+  padding-left: 1em;
+  margin-right: 2em;
+  font-size: 4em;
   color: #202020;
   font-weight: 500;
 }
+
+#current-volume {
+  padding-right: 1em;
+  margin-left: 2em;
+  font-size: 2.5em;
+  color: #202020;
+  font-weight: 500;
+}
+
+#user-options {
+  position: absolute;
+  left: 2em;
+  top: 60%;  /* Adjust this value based on the final layout */
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+img {
+  position: absolute;
+  width: 3em;
+  top: 45%;
+  right: -8%;
+}
+
+#final-value {
+  font-size: 1.5em;
+  text-align: center;
+  color: #202020;
+  font-weight: 500;
+}
+
 @media screen and (max-width: 768px) {
   .wrapper {
     font-size: 12px;

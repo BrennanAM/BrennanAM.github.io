@@ -22,11 +22,21 @@
         <p>Click Spin to see your volume!</p>
       </div>
     </div>
+    <div id="user-options" style="display: none;">
+      <button id="add-btn">Add to Volume</button>
+      <button id="subtract-btn">Subtract from Volume</button>
+    </div>
+    <div id="info">
+      <p id="lives">Lives: 3</p>
+      <p id="current-volume">Current Volume: 50</p> <!-- Assuming 50 is a starting volume -->
+    </div>
+    
     <!-- Chart JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
     <!-- Chart JS Plugin for displaying text over chart -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js"></script>
     <!-- Script -->
     <script src="script.js"></script>
+    <audio id="background-music" src="wheel_of_fortune.mp3" type="audio/mp3"></audio>
   </body>
 </html>
