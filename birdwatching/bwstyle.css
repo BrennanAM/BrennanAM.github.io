@@ -1,7 +1,4 @@
-@charset "utf-8";
-/* CSS Document */
 
-/* || General setup */
 
 html, body {
   margin: 0;
@@ -19,7 +16,7 @@ body {
   margin: 0 auto;
 }
 
-/* || typography */
+
 
 h1, h2, h3 {
   font-family: 'Cinzel Decorative', cursive;
@@ -51,7 +48,7 @@ p, li {
   line-height: 1.5;
 }
 
-/* || header layout */
+
 
 header {
   margin-bottom: 10px;
@@ -110,13 +107,11 @@ nav a, nav span {
 
 }
 
-/* || main layout */
 
-/* original main style
+
 main {
   display: flex;
-} 
- */
+}
 
 article, section {
   flex: 4;
@@ -141,18 +136,3 @@ aside img {
 footer {
   margin-top: 10px;
 }
-
-/* HK additions */
-
-main {
-  flex: 3;
-}
-
-.flex-container {
-  background-color: red;
-  padding: 1%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-
